@@ -11,11 +11,10 @@
 		4737B4EB2B6C0A61001374D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737B4EA2B6C0A61001374D6 /* ContentView.swift */; };
 		4737B4ED2B6C0A62001374D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4737B4EC2B6C0A62001374D6 /* Assets.xcassets */; };
 		4737B4F02B6C0A62001374D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4737B4EF2B6C0A62001374D6 /* Preview Assets.xcassets */; };
-		4737B4F82B6C0A7D001374D6 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 4737B4F72B6C0A7D001374D6 /* Apollo */; };
-		4737B4FA2B6C0A7D001374D6 /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4737B4F92B6C0A7D001374D6 /* Apollo-Dynamic */; };
-		4737B4FC2B6C0A7D001374D6 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4737B4FB2B6C0A7D001374D6 /* ApolloAPI */; };
-		4737B4FE2B6C0A7D001374D6 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4737B4FD2B6C0A7D001374D6 /* ApolloSQLite */; };
-		4737B5002B6C0A7D001374D6 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4737B4FF2B6C0A7D001374D6 /* ApolloTestSupport */; };
+		4788CD932B6CC00F00046845 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 4788CD922B6CC00F00046845 /* Apollo */; };
+		4788CD952B6CC00F00046845 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4788CD942B6CC00F00046845 /* ApolloAPI */; };
+		4788CD972B6CC00F00046845 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 4788CD962B6CC00F00046845 /* ApolloCodegenLib */; };
+		4788CD992B6CC00F00046845 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4788CD982B6CC00F00046845 /* ApolloSQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4737B4FC2B6C0A7D001374D6 /* ApolloAPI in Frameworks */,
-				4737B5002B6C0A7D001374D6 /* ApolloTestSupport in Frameworks */,
-				4737B4FE2B6C0A7D001374D6 /* ApolloSQLite in Frameworks */,
-				4737B4F82B6C0A7D001374D6 /* Apollo in Frameworks */,
-				4737B4FA2B6C0A7D001374D6 /* Apollo-Dynamic in Frameworks */,
+				4788CD952B6CC00F00046845 /* ApolloAPI in Frameworks */,
+				4788CD992B6CC00F00046845 /* ApolloSQLite in Frameworks */,
+				4788CD972B6CC00F00046845 /* ApolloCodegenLib in Frameworks */,
+				4788CD932B6CC00F00046845 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,11 +92,10 @@
 			);
 			name = SDUI;
 			packageProductDependencies = (
-				4737B4F72B6C0A7D001374D6 /* Apollo */,
-				4737B4F92B6C0A7D001374D6 /* Apollo-Dynamic */,
-				4737B4FB2B6C0A7D001374D6 /* ApolloAPI */,
-				4737B4FD2B6C0A7D001374D6 /* ApolloSQLite */,
-				4737B4FF2B6C0A7D001374D6 /* ApolloTestSupport */,
+				4788CD922B6CC00F00046845 /* Apollo */,
+				4788CD942B6CC00F00046845 /* ApolloAPI */,
+				4788CD962B6CC00F00046845 /* ApolloCodegenLib */,
+				4788CD982B6CC00F00046845 /* ApolloSQLite */,
 			);
 			productName = SDUI;
 			productReference = 4737B4E52B6C0A61001374D6 /* SDUI.app */;
@@ -129,7 +126,7 @@
 			);
 			mainGroup = 4737B4DC2B6C0A61001374D6;
 			packageReferences = (
-				4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				4788CD912B6CC00E00046845 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 4737B4E62B6C0A61001374D6 /* Products */;
 			projectDirPath = "";
@@ -366,41 +363,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+		4788CD912B6CC00E00046845 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.0;
+				kind = exactVersion;
+				version = 0.53.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4737B4F72B6C0A7D001374D6 /* Apollo */ = {
+		4788CD922B6CC00F00046845 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 4788CD912B6CC00E00046845 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
 		};
-		4737B4F92B6C0A7D001374D6 /* Apollo-Dynamic */ = {
+		4788CD942B6CC00F00046845 /* ApolloAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = "Apollo-Dynamic";
-		};
-		4737B4FB2B6C0A7D001374D6 /* ApolloAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 4788CD912B6CC00E00046845 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloAPI;
 		};
-		4737B4FD2B6C0A7D001374D6 /* ApolloSQLite */ = {
+		4788CD962B6CC00F00046845 /* ApolloCodegenLib */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloSQLite;
+			package = 4788CD912B6CC00E00046845 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
 		};
-		4737B4FF2B6C0A7D001374D6 /* ApolloTestSupport */ = {
+		4788CD982B6CC00F00046845 /* ApolloSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4737B4F62B6C0A7D001374D6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloTestSupport;
+			package = 4788CD912B6CC00E00046845 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
